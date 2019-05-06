@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Piedra Papel Tijera</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra Papel o Tijera</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="pc-label" class="badge">pc</div>
+        <span id="user-score">0</span>:<span id="pc-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>La piedra cubre al papel. Ganaste!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.svg" alt="Piedra" width="120px">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.svg" alt="Papel" width="120px">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="images/scissors.svg" alt="Tijera" width="120px">
+        </div>
+    </div>
+
+    <p id="action-message">Haz tu movimiento!</p>
+
+    <script src="app.js"></script>
+</body>
+</html>
