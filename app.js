@@ -7,7 +7,8 @@ const userScore_span = document.getElementById("user-score"),
       result_p = document.querySelector(".result > p"),
       rock_div = document.getElementById("rock"),
       paper_div = document.getElementById("paper"),
-      scissors_div = document.getElementById("scissors");
+      scissors_div = document.getElementById("scissors"),
+      actionMessage_p = document.getElementById("action-message")
 
 // It generates the choice of the computer randomly
 function getComputerChoice() {
@@ -74,7 +75,7 @@ function game(userChoice) {
 
 // It listens for what div the user clicks
 function main() {
-    rock_div.addEventListener('click', () => game("rock")); 
+    rock_div.addEventListener('click', () => game("rock"));
     paper_div.addEventListener('click', () => game("paper"));
     scissors_div.addEventListener('click', () => game("scissors"));
 }
